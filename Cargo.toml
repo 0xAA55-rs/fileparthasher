@@ -1,10 +1,11 @@
 [package]
 name = "fileparthasher"
 version = "0.0.3"
-edition.workspace = true
-authors.workspace = true
-license-file.workspace = true
-repository.workspace = true
+edition = "2024"
+authors = ["0xAA55 <838816058@qq.com>"]
+license-file = "LICENSE"
+repository = "https://github.com/0xAA55-rs/fileparthasher"
+readme = "Readme.md"
 description = "File hasher to calculate the hash for a section of a file, the hash is `u64` size. The `Write` trait was implemented for it."
 keywords = ["hash", "write"]
 
