@@ -47,6 +47,11 @@ impl FileHasher {
         copy(reader, self, length)?;
         Ok(self.hasher.finish())
     }
+
+    /// * If you are using its `Write` trait, call this function to get the hash.
+    pub fn finish(self) -> u64 {
+        self.hasher.finish()
+    }
 }
 
 impl Write for FileHasher {
